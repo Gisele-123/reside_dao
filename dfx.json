@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "reside_backend": {
+      "main": "src/reside_backend/main.mo",
+      "type": "motoko"
+    },
+    "reside_frontend": {
+      "dependencies": [
+        "reside_backend"
+      ],
+      "source": [
+        "src/reside_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "reside_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
