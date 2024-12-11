@@ -1,5 +1,5 @@
 import { Actor, HttpAgent } from '@dfinity/agent';
-import { idlFactory as residenceIdl } from '@dfinity/agent/lib/cjs/canisters/management_service';
+import { idlFactory as residenceIdl } from '../../declarations/reside_backend/reside_backend.did.js';
 
 const agent = new HttpAgent({ host: 'http://127.0.0.1:4943/?canisterId=be2us-64aaa-aaaaa-qaabq-cai&id=bkyz2-fmaaa-aaaaa-qaaaq-cai' }); 
 
